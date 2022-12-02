@@ -4,26 +4,6 @@
   <link rel="stylesheet" href="styles/styles.css">
   <title>FrozenNotes</title>
   <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
-  <script type="text/javascript">
-
-   document.addEventListener("adobe_dc_view_sdk.ready", function()
-
-   {
-
-      var adobeDCView = new AdobeDC.View({clientId: "20d69419a7394a4c84a84189c3bde23b", divId: "adobe-dc-view"});
-
-      adobeDCView.previewFile(
-
-     {
-
-         content:  {location: {url: "https://frozennotes.github.io/ICSE_Resources/FrozenNotes-String_Handelling-Library_Classes-JavaNotes.pdf">}},
-
-         metaData: {fileName: "FrozenNotes-String_Handelling-Library_Classes-JavaNotes.pdf"}
-
-     });
-
-   });
-  </script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "37dfe70baa8745048c1b51f252ea86f9"}'></script><!-- End Cloudflare Web Analytics -->
   </head>
   <body><div data-collapse="small" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav-bar w-nav">
@@ -71,8 +51,17 @@
         <div class="re-link"><a href="FrozenNotes-String_Handelling-Library_Classes-JavaNotes.pdf"><h2>Download</h2><div></div></a>
         <a href="ca-strhnd-jcl.html"><h2>Web View</h2><div></div></a></div>
 <div class="pdf">
-        <div id="adobe-dc-view">
-  </div>
+        <div id="adobe-dc-view" style="width: 800px;"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/viewer.js"></script>
+<script type="text/javascript">
+	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+		var adobeDCView = new AdobeDC.View({clientId: "20d69419a7394a4c84a84189c3bde23b", divId: "adobe-dc-view"});
+		adobeDCView.previewFile({
+			content:{location: {url: "FrozenNotes-String_Handelling-Library_Classes-JavaNotes.pdf"}},
+			metaData:{fileName: "FrozenNotes-String_Handelling-Library_Classes-JavaNotes.pdf"}
+		}, {embedMode: "IN_LINE"});
+	});
+</script>
         </div>
   </center>
       </div>
