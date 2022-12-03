@@ -2,40 +2,259 @@
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+<script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script><script src="https://documentservices.adobe.com/view-sdk/2.31.1_3.1.1-ef137c6f/ViewSDKInterface.js"></script>
+  <!-- Cloudflare Web Analytics --><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;37dfe70baa8745048c1b51f252ea86f9&quot;}"></script><!-- End Cloudflare Web Analytics -->
   <title>FrozenNotes</title>
-  <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
-  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "37dfe70baa8745048c1b51f252ea86f9"}'></script><!-- End Cloudflare Web Analytics -->
-  </head>
-  <body><div data-collapse="small" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav-bar w-nav">
-      <div class="nav-container w-container">
-        <div class="logo-div">
-          <a href="index.html" class="nav-logo w-inline-block w--current"><img src="images/FrozenNotesLogoText.png" alt="FrozenNotes Logo" class="logo" width="178"></a>
-        </div>
-        <nav role="navigation" class="nav-content w-nav-menu">
-          <div class="search-banner">
-            <div class="search-section">
-              
-            </div>
-          </div>
-          <div class="nav-menu">
-            <a href="resources.html" class="nav-link w-nav-link">Resources</a>
-          </div>
-        </nav>
-        <div class="menu-button w-nav-button"><img src="images/Menu-Icon.svg" loading="lazy" alt="" class="menu-icon" width="24"></div>
+  <script src="https://documentcloud.adobe.com/view-sdk/2.31.1_3.1.1-ef137c6f/ViewSDKInterface.js"></script><style type="text/css">.ViewSDK_hideOverflow {
+        overflow: hidden;
+    }</style><style type="text/css">.ViewSDK_parentRelativeWidth {
+        width: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeWidth {
+        width: 100vw;
+    }</style><style type="text/css">.ViewSDK_parentRelativeHeight {
+        height: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeHeight {
+        height: 100vh;
+    }</style><style type="text/css">.ViewSDK_fullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:99999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">:root { --ViewSDK-mobile-viewport-height:1vh; }</style><style type="text/css">.ViewSDK_fullScreenPDFViewerMobile {
+        width:100vw !important; height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        max-width:100vw !important; max-height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        position:fixed; top:0; left:0; z-index:99999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_hideOverflow {
+        overflow: hidden;
+    }</style><style type="text/css">.ViewSDK_parentRelativeWidth {
+        width: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeWidth {
+        width: 100vw;
+    }</style><style type="text/css">.ViewSDK_parentRelativeHeight {
+        height: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeHeight {
+        height: 100vh;
+    }</style><style type="text/css">.ViewSDK_fullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:9999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_LBFullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:10000;
+        margin: 0 !important; padding: 0 !important;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }</style><style type="text/css">:root { --ViewSDK-mobile-viewport-height:1vh; }</style><style type="text/css">.ViewSDK_fullScreenPDFViewerMobile {
+        width:100vw !important; height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        max-width:100vw !important; max-height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        position:fixed; top:0; left:0; z-index:9999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_LBLoader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 10000;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #1473E6;
+        width: 56px !important;
+        height: 56px !important;
+        margin: -32px 0 0 -32px;
+        border-radius: 50%;
+        -webkit-animation: lbSpin 2s linear infinite;
+        animation: lbSpin 2s linear infinite;
+    }
+    @-webkit-keyframes lbSpin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes lbSpin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }</style><script src="https://documentservices.adobe.com/view-sdk/2.31.1_3.1.1-ef137c6f/ViewSDKInterface.js"></script><style type="text/css">.ViewSDK_hideOverflow {
+        overflow: hidden;
+    }</style><style type="text/css">.ViewSDK_parentRelativeWidth {
+        width: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeWidth {
+        width: 100vw;
+    }</style><style type="text/css">.ViewSDK_parentRelativeHeight {
+        height: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeHeight {
+        height: 100vh;
+    }</style><style type="text/css">.ViewSDK_fullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:99999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">:root { --ViewSDK-mobile-viewport-height:1vh; }</style><style type="text/css">.ViewSDK_fullScreenPDFViewerMobile {
+        width:100vw !important; height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        max-width:100vw !important; max-height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        position:fixed; top:0; left:0; z-index:99999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_hideOverflow {
+        overflow: hidden;
+    }</style><style type="text/css">.ViewSDK_parentRelativeWidth {
+        width: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeWidth {
+        width: 100vw;
+    }</style><style type="text/css">.ViewSDK_parentRelativeHeight {
+        height: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeHeight {
+        height: 100vh;
+    }</style><style type="text/css">.ViewSDK_fullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:9999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_LBFullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:10000;
+        margin: 0 !important; padding: 0 !important;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }</style><style type="text/css">:root { --ViewSDK-mobile-viewport-height:1vh; }</style><style type="text/css">.ViewSDK_fullScreenPDFViewerMobile {
+        width:100vw !important; height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        max-width:100vw !important; max-height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        position:fixed; top:0; left:0; z-index:9999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_LBLoader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 10000;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #1473E6;
+        width: 56px !important;
+        height: 56px !important;
+        margin: -32px 0 0 -32px;
+        border-radius: 50%;
+        -webkit-animation: lbSpin 2s linear infinite;
+        animation: lbSpin 2s linear infinite;
+    }
+    @-webkit-keyframes lbSpin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes lbSpin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }</style><style type="text/css">.ViewSDK_hideOverflow {
+        overflow: hidden;
+    }</style><style type="text/css">.ViewSDK_parentRelativeWidth {
+        width: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeWidth {
+        width: 100vw;
+    }</style><style type="text/css">.ViewSDK_parentRelativeHeight {
+        height: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeHeight {
+        height: 100vh;
+    }</style><style type="text/css">.ViewSDK_fullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:99999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">:root { --ViewSDK-mobile-viewport-height:1vh; }</style><style type="text/css">.ViewSDK_fullScreenPDFViewerMobile {
+        width:100vw !important; height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        max-width:100vw !important; max-height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        position:fixed; top:0; left:0; z-index:99999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_hideOverflow {
+        overflow: hidden;
+    }</style><style type="text/css">.ViewSDK_parentRelativeWidth {
+        width: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeWidth {
+        width: 100vw;
+    }</style><style type="text/css">.ViewSDK_parentRelativeHeight {
+        height: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeHeight {
+        height: 100vh;
+    }</style><style type="text/css">.ViewSDK_fullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:9999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_LBFullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:10000;
+        margin: 0 !important; padding: 0 !important;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }</style><style type="text/css">:root { --ViewSDK-mobile-viewport-height:1vh; }</style><style type="text/css">.ViewSDK_fullScreenPDFViewerMobile {
+        width:100vw !important; height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        max-width:100vw !important; max-height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        position:fixed; top:0; left:0; z-index:9999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_LBLoader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 10000;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #1473E6;
+        width: 56px !important;
+        height: 56px !important;
+        margin: -32px 0 0 -32px;
+        border-radius: 50%;
+        -webkit-animation: lbSpin 2s linear infinite;
+        animation: lbSpin 2s linear infinite;
+    }
+    @-webkit-keyframes lbSpin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes lbSpin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }</style></head>
+<body>
+  <div class="header" id="myHeader">
+    <ul class="Navi"><div id="menu">
+      <div id="menu-bar" onclick="menuOnClick()" class="">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
       </div>
-    </div>
-  <center>
-    <div class="notice">
-    
-    <p class="notice">
-    UNDER TESTING - BETA PHASE - V0.6.7<br>Some links might not work and some pages might be broken in certain devices. If you notice something wrong, please let us know by submitting a <a href="support.html" class="notice">request form</a>.
-  </p>
-    </div></center><div class="section light-color-gradient wf-section">
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="support.html">Contact</a></li>
+          <li><a href="beta.html">BETA</a></li>
+        </ul>
+      </nav> 
+    </div><div class="menu-bg" id="menu-bg"></div><a href="index.html"><img src="images/FrozenNotesLogoText.png" class="loghead" height="50px">
+</a><li class="nave"></li><a href="beta.html"><li class="nave" style="background: #254bff;
+border-radius: 10px;
+border: 0px solid #fff;
+">BETA</li></a><li class="nave"><a href="support.html" class="hn">Contact</a></li><li class="nave"><a href="resources.html" class="hn">Resources</a></li>
+<li class="nave"><a href="index.html" class="hn">Home</a></li></ul></div>
+    <div class="content"><center>
+
+  
+
+</center></div>
+  <div class="section light-color-gradient wf-section">
   <center>
         <div class="container">
           <div class="w-layout-grid hero-grid">
             <div class="text-box _500px">
-              <h1 class="heading h1">Computer Applications</h1>
+              <h1 class="heading h1">FrozenNotes BETA</h1>
               <p class="paragraph large">ICSE Study Materials</p>
               <div class="spacer _16"></div>
               <a href="resources.html" class="button w-button">All Resources</a>
@@ -47,19 +266,18 @@
   
 
       <div class="featured"><center>
-  <h1>String Handling &amp; Library Classes</h1>
-        <div class="re-link"><a href="FrozenNotes-String_Handelling-Library_Classes-JavaNotes.pdf"><h2>Download</h2><div></div></a>
-        <a href="ca-strhnd-jcl.html"><h2>Web View</h2><div></div></a></div>
+  <h1>BETA Resources</h1>
+        <div class="re-link"><a href="beta-c-a"><h2>Computer Applications</h2><div></div></a>
+        </div>
 
-        <div id="adobe-dc-view" style="width: 100%;"></div>
 <script src="https://documentcloud.adobe.com/view-sdk/viewer.js"></script>
 <script type="text/javascript">
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
 		var adobeDCView = new AdobeDC.View({clientId: "20d69419a7394a4c84a84189c3bde23b", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
-			content:{location: {url: "FrozenNotes-String_Handelling-Library_Classes-JavaNotes.pdf"}},
-			metaData:{fileName: "FrozenNotes-String_Handelling-Library_Classes-JavaNotes.pdf"}
-		}, {embedMode: "IN_LINE"});
+			content:{location: {url: "FrozenNotes-C-A-BETA.pdf"}},
+			metaData:{fileName: "FrozenNotes-C-A-BETA.pdf"}
+		}, {embedMode: "SIZED_CONTAINER"});
 	});
 </script>
   </center>
@@ -81,7 +299,7 @@
             <h5 class="footer-header">Website</h5>
             <a href="index.html" class="footer-link">Home</a>
             <a href="resources.html" class="footer-link">Resources</a>
-            <a href="support.html" class="footer-link">Contact</a>
+            <a href="support.html" class="footer-link">Contact</a><a href="beta.html" class="footer-link">BETA</a>
             
             
             
@@ -97,5 +315,7 @@
       </div>
     </div>
   </footer>
-  
-  <style type="text/css"></style><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style></body></html>
+<script src="scripts.js">
+</script>
+
+</body></html>
