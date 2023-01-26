@@ -77,7 +77,13 @@
     @keyframes lbSpin {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
-    }</style><script src="https://documentservices.adobe.com/view-sdk/2.31.1_3.1.1-ef137c6f/ViewSDKInterface.js"></script></head>
+    }</style><script src="https://documentservices.adobe.com/view-sdk/2.31.1_3.1.1-ef137c6f/ViewSDKInterface.js"></script>
+	<meta charset="utf-8"/>
+
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+ <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1"/>
+	</head>
 <body>
   <div class="header sticky" id="myHeader">
     <ul class="Navi"><div id="menu">
@@ -125,17 +131,46 @@ border: 0px solid #fff;
   <h1>Computer Applications Term-2 Notes</h1>
         <div class="re-link"><a href="FrozenNotesCA2.pdf"><h2>Download</h2><div></div></a>
         </div>
+	      
+	      
 <div id="adobe-dc-view" style="height: 90%; width: 95%;"></div>
-<script src="https://documentcloud.adobe.com/view-sdk/viewer.js"></script>
+
+<script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+
 <script type="text/javascript">
-	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-		var adobeDCView = new AdobeDC.View({clientId: "20d69419a7394a4c84a84189c3bde23b", divId: "adobe-dc-view"});
-		adobeDCView.previewFile({
-			content:{location: {url: "FrozenNotesCA2.pdf"}},
-			metaData:{fileName: "FrozenNotesCA2.pdf"}
-		}, {embedMode: "SIZED_CONTAINER"});
-	});
+
+// UI options in a constant
+
+const previewConfig = {
+
+   embedMode: "SIZED_CONTAINER",
+
+   showDownloadPDF: true,
+
+   showZoomControl: true
+
+}
+
+
+document.addEventListener("adobe_dc_view_sdk.ready", function () {
+
+   var adobeDCView = new AdobeDC.View({clientId: "20d69419a7394a4c84a84189c3bde23b", divId: "adobe-dc-view"});
+
+   // Consume previewConfig here. . .
+
+   adobeDCView.previewFile({
+
+      content:{location: {url: "FrozenNotesCA2.pdf"}},
+
+      metaData:{fileName: "FrozenNotesCA2.pdf"}
+
+   }, previewConfig);
+
+});
+
 </script>
+	      
+	      
   </center>
       </div>
 <div class="support">
