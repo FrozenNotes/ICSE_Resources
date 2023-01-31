@@ -3,6 +3,13 @@ A website of Study Materials for students writing the ICSE Examinations. (Develo
 
 Access website: https://frozennotes.github.io/ICSE_Resources
 
+We are 0 Google (We don't use Google Products).
+We use Cloudflare's privacy friendly analytics to improve our website.
+We use Microsoft 365 and Adobe APIs to provide and develop features.
+
+FROZENNOTES IS NOT AFFILIATED WITH ANY 3RD PARTIES OR CISCE
+WE ARE INDEPENDENT
+
 Report issues with website & study materials:
 
   https://frozennotes.github.io/ICSE_Resources/support.html
