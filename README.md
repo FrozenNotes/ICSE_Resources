@@ -16,7 +16,7 @@ Report issues with website & study materials:
   
   (or)
   
-  email: y4uhskbgv@mozmail.com
+  email: y4uhskbgv@mozmail.com or frozen_notes@outlook.com or sanjayrohith@outlook.com
   
 (C) FROZENNOTES 2022-2025
    All Rights Reserved
