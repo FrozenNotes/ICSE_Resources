@@ -22,5 +22,6 @@ Website: https://frozennotes.github.io/ICSE_Resources
   email: y4uhskbgv@mozmail.com or frozen_notes@outlook.com or sanjayrohith@outlook.com
   
 (C) FROZENNOTES 2023. All Rights Reserved<br>
+Made On Earth by Stduents<br>
       -------An Icy Project-------<br>
           -------IcyMint-------
