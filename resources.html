@@ -1,89 +1,122 @@
-<html data-lt-installed="true"><head>
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles/styles.css">
-  <title>FrozenNotes</title>
-  </head>
-  <body><div data-collapse="small" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav-bar w-nav">
-      <div class="nav-container w-container">
-        <div class="logo-div">
-          <a href="index.html" class="nav-logo w-inline-block w--current"><img src="images/FrozenNotesLogoText.png" alt="FrozenNotes Logo" class="logo" width="178"></a>
-        </div>
-        <nav role="navigation" class="nav-content w-nav-menu">
-          <div class="search-banner">
-            <div class="search-section">
-              
-            </div>
-          </div>
-          <div class="nav-menu">
-            <a href="index.html" class="nav-link w-nav-link">Home</a>
-          </div>
-        </nav>
-        <div class="menu-button w-nav-button"><img src="images/Menu-Icon.svg" loading="lazy" alt="" class="menu-icon" width="24"></div>
-      </div>
-    </div>
-  <center>
-    <div class="notice">
-    
-    <p class="notice">
-    UNDER TESTING - BETA PHASE - V0.6.7<br>Some links might not work and some pages might be broken in certain devices. If you notice something wrong, please let us know by submitting a <a href="support.html" class="notice">request form</a>.
-  </p>
-    </div></center><div class="section light-color-gradient wf-section">
-  <center>
-        <div class="container">
-          <div class="w-layout-grid hero-grid">
-            <div class="text-box _500px">
-              <h1 class="heading h1">Resources</h1>
-              <p class="paragraph large">ICSE Study Materials</p>
-              <div class="spacer _16"></div>
-              <a href="index.html" class="button w-button">Home</a>
-            </div>
-          </div>
-        </div>
-  </center>
-      </div>
-  
+<!--FrozenNotes V2.0.7.75.23 Source Code - HTML
+    index.html - HTML - Home Page - 23.12.23 --
+    © FROZENNOTES 2023. All Rights Reserved -->
 
-      <div class="featured"><center>
-  <h1>Resources</h1>
-        <div class="row">
-          <div class="column">
-            <a href="computer.html"><img src="images/computer.png"><h2>Computer Applications</h2></a>
-          </div>
-        </div>
-  <div class="space"></div>
-  </center>
-      </div>
+<!DOCTYPE html>
+<html lang="en" data-lt-installed="true">
 
-  
-    
-  <footer><div class="footer wf-section">
-      <div class="footer-container w-container">
-        <div class="w-layout-grid footer-grid">
-          <div id="w-node-b8d7be4a-ce45-83ab-5947-02d204c8bff0-cf3fcb86" class="footer-logo-block">
-            <a data-ix="logo" href="index.html" class="footer-logo w-nav-brand w--current"><img src="images/FrozenNotesLogoText.png" alt="FrozenNotes Logo" width="204"></a>
-            <div class="spacer _16"></div>
-            
-          </div>
-          <div class="footer-links-container">
-            <h5 class="footer-header">Website</h5>
-            <a href="index.html" class="footer-link">Home</a>
-            <a href="resources.html" class="footer-link">Resources</a>
-            <a href="support.html" class="footer-link">Contact</a>
-            
-            
-            
-          </div>
-          <center>
-    <div class="footer_notice">
-    
-    <p>
-    UNDER TESTING - BETA PHASE - V0.6.7<br>Some links might not work and some pages might be broken in certain devices. If you notice something wrong, please let us know by submitting a request form.
-  </p>
-    <div class="paragraph small">© 2022-2023 FrozenNotes. All Rights Reserved.</div></div></center>
+<head>
+    <meta charset="UTF-8">
+    <title>FrozenNotes Resoruces</title>
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;family=Roboto&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav" id="mainbar">
+        <div>
+            <a href="index.html"><img src="res/namelogo.png" class="navlogo"></a>
+            <a href="index.html" class="navLinks" id="navLiFi">Home</a>
+            <svg class="ham ham6" viewBox="0 0 100 100" width="80"
+                onclick="this.classList.toggle('active'); document.querySelector('.dropdown_menu').classList.toggle('show')">
+                <path class="line top"
+                    d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272">
+                </path>
+                <path class="line middle"
+                    d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272">
+                </path>
+                <path class="line bottom"
+                    d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272">
+                </path>
+            </svg>
+            <a href="resources.html" class="navLinks">Resources</a>
+            <a href="support.html" class="navLinks">Contact Us</a>
+            <a href="https://github.com/FrozenNotes/ICSE_Resources" class="navLinks" id="navLiLa">Contribute</a>
+            <div class="dropdown_menu">
+                <ul class="menulist">
+                    <li class="menulinks"> <a href="index.html" class="menuLinks" id="firstmenuli">Home</a> </li>
+                    <li class="menulinks"> <a href="resources.html" class="menuLinks">Resources</a> </li>
+                    <li class="menulinks"> <a href="support.html" class="menuLinks">Contact Us</a> </li>
+                    <li class="menulinks"> <a href="https://github.com/FrozenNotes/ICSE_Resources"
+                            class="menuLinks">Contribute</a> </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
-  </footer>
-  
-  <style type="text/css"></style><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style></body></html>
+    </nav>
+    <main>
+        <center>
+            <div class="hero">
+                <h1 class="herotext" id="ht" style="margin: 0 !important;padding-top: 70px;">Resources</h1>
+                <p class="herosub" style="margin: 0 !important;">ICSE Computer Apllications Notes<br>FrozenNotes</p>
+                <br>
+            </div>
+            <div class="featured">
+                <center>
+                    <div class="row" id="mr">
+                        <div class="column" id="mc" style="background-image: url(res/csbg.png);height: 300px;">
+                            <a href="computer.html?doc=04">
+                                <div class="reslbl" id="mreslb">
+                                    <p class="labl" id="mlbl">ICSE Resource</p>
+                                    <h2 class="clh" id="mclh">ICSE Full Notes</h2>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="column" style="background-image: url(res/bg3.png);">
+                            <a href="computer.html?doc=03">
+                                <div class="reslbl">
+                                    <p class="labl">ICSE Resource</p>
+                                    <h2 class="clh">Errors &amp; Infinite Loop</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column" style="background-image: url(res/bg2.png);">
+                            <a href="computer.html?doc=02">
+                                <div class="reslbl">
+                                    <p class="labl">ICSE Resource</p>
+                                    <h2 class="clh">Term 2 Notes</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column" style="background-image: url(res/bg1.png);">
+                            <a href="computer.html?doc=01">
+                                <div class="reslbl">
+                                    <p class="labl">ICSE Resource</p>
+                                    <h2 class="clh">Strings, Library &amp; Wrapper Classes</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                </center>
+            </div>
+        </center>
+    </main>
+
+    <footer>
+        <center>
+            <div class="foot">
+                <a href="index.html"><img src="res/namelogo.png" class="footimg"></a>
+                <p class="footxt">© FROZENNOTES 2023. All Rights Reserved</p>
+                <a href="index.html" class="footlink">Home</a>
+                <a href="resources.html" class="footlink">Resoruces</a>
+                <a href="support.html" class="footlink">Contact Us</a>
+                <br>
+                <a href="https://github.com/FrozenNotes"><img src="res/github.png" class="sm"></a>
+                <a href="https://www.reddit.com/user/FrozenNotesOfficial/"><img src="res/reddit.png" class="sm"></a>
+                <a href="https://www.instagram.com/frozennotesofficial/"><img src="res/instagram.png" class="sm"></a>
+            </div>
+        </center>
+    </footer>
+    <style type="text/css"></style>
+    <script src="script/scripts.js"></script>
+</body>
+
+</html>
