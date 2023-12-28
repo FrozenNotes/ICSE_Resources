@@ -133,7 +133,7 @@ req.send();
 */
 
 //-----------------------------------------------------VCT------------------------------------------------//
-/*
+
 let req = new XMLHttpRequest();
 let views;
 let req1 = new XMLHttpRequest();
@@ -173,4 +173,3 @@ req.open("GET", "https://api.jsonbin.io/v3/b/658935801f5677401f13061f", true);
 req.setRequestHeader("X-Access-Key", "$2a$10$dw.e5rVLunQy/0bG.hXYduHS5l231MNtyrC/pfpm29zBk6lqJwsV6");
 req.setRequestHeader("X-Bin-Meta", "false");
 req.send();
-*/
