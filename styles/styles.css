@@ -50,7 +50,7 @@
   background: rgba(0, 0, 0, 0);
 }
 .navlogo {
-  width: 170px;
+  width: 51px;
 }
 body{
   background-color: black;
@@ -509,6 +509,40 @@ a{
 .bn30:hover .text {
   background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
 }
+/*----------------------------*/
+#video {
+  border: 0px solid black;
+  width: 320px;
+  height: 240px;
+}
+
+#photo {
+  border: 0px solid black;
+  width: 320px;
+  height: 240px;
+}
+
+#canvas {
+  display: none;
+}
+
+.camera {
+  width: 340px;
+  display: inline-block;
+}
+
+.output {
+  width: 340px;
+  display: inline-block;
+}
+
+.contentarea {
+  font-size: 16px;
+  font-family: Arial;
+  text-align: center;
+}
+/*----------------------*/
+
 @media screen and (max-width: 800px) {
     .column {
       -ms-flex: 100%;
