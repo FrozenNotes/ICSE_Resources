@@ -1,0 +1,20 @@
+{
+  "max": 3,
+  "S7227": [
+    "true",
+    "01",
+    "Sanjay Rohith",
+    "IMG001"
+  ],
+  "S7156": [
+    "false",
+    "02",
+    "Bhrath",
+    "IMG005"
+  ],
+  "S3702": [
+    "true",
+    "03",
+    "STUDENT NAME 3"
+  ]
+}
