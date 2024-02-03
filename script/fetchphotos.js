@@ -9,8 +9,7 @@ function setimg(newImageUrl) {
 }
 
 async function fetchdat(){
-    const uid="S"+document.getElementById("inp").value;
-    
+    const uid="S"+document.getElementById("inp").value+"U"+document.getElementById("inp2").value;
     try{
     fetch('dat/0a.json')
         .then((response) => {
@@ -21,13 +20,12 @@ async function fetchdat(){
         })
         .then((data) => {
             console.log("UID="+uid)
-            console.log(data)
             if (data && data[uid] && data[uid].length > 1) {
                 nm = data[uid][2];
                 document.getElementById('funtxt').innerHTML="Greetings "+nm+"!";
                setimg("photos/"+data[uid][3]+".jpg");
             }
-            else document.getElementById('funtxt').innerHTML="Invalid Admission Number";
+            else document.getElementById('funtxt').innerHTML="Invalid Credentials";
         })
         .catch(error => {
             console.log("Error fetching data:", error);

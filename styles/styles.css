@@ -510,13 +510,16 @@ a{
   background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
 }
 /*-------------------------*/
-#inp {
+.uid {
   height: 40px;
   border-radius: 7px;
   background: #191919;
   color: #fff;
   border: 0;
   padding-left: 20px;
+}
+#inp2{
+  margin-top: 15px;
 }
 #funtext
 {
