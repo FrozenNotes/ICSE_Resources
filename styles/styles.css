@@ -509,7 +509,28 @@ a{
 .bn30:hover .text {
   background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
 }
-
+/*-------------------------*/
+#inp {
+  height: 40px;
+  border-radius: 7px;
+  background: #191919;
+  color: #fff;
+  border: 0;
+  padding-left: 20px;
+}
+#funtext
+{
+  color: white;
+  font-size: 20px;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+#funtxt
+{
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 120%;
+}
 /*----------------------------*/
 #video {
   border: 0px solid black;
@@ -541,6 +562,14 @@ a{
   font-size: 16px;
   font-family: Arial;
   text-align: center;
+}
+
+.imgcont{
+  width: 100%;
+}
+
+#imgel{
+  width: 85%;
 }
 /*----------------------*/
 
@@ -578,6 +607,9 @@ a{
   }
   #lrph{
     display: block;
+  }
+  .bn5{
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 920px){
