@@ -101,7 +101,7 @@ async function fetchdat(){
                 document.getElementById('funtxt').innerHTML="Greetings "+nm+"!";
                setimg("photos/"+data[uid][3]+".jpg");
             }
-            else document.getElementById('funtxt').innerHTML="Invalid Credentials";
+            else document.getElementById('funtxt').innerHTML="Invalid Credentials. If you think it's a mistake, contact admins.";
         })
         .catch(error => {
             console.log("Error fetching data:", error);
