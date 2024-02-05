@@ -45,6 +45,11 @@
             <div class="hero">
                 <h1 class="herotext" id="ht">IDA SCUDDER SCHOOL</h1>
                 <p class="herosub">Graduation Day 2024<br>Project Horizon - AI Face Recognition</p>
+                <button id="detect" onclick="detect()"  class="btn btn-lg btn-primary">Detect barcodes</button>
+<div>
+<img hidden id="image" crossorigin="anonymous" src="https://upload.wikimedia.org/wikipedia/en/f/f4/LiveBarcodeApp.jpg"> <br>
+<canvas id="canvas" width=320 height=320>
+</div>
                 <div class="photodisp">
                     <input type="text" class="uid" id="inp" minlength="4" maxlength="7" size="30%" placeholder="Admission Number">
                     <input type="text" class="uid" id="inp2" minlength="7" maxlength="8" size="30%" placeholder="Unique ID">

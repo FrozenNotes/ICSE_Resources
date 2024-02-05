@@ -1,20 +1,3 @@
 {
-  "max": 3,
-  "S7227U7777777": [
-    "true",
-    "01",
-    "Sanjay Rohith",
-    "IMG001"
-  ],
-  "S7156U8363664": [
-    "false",
-    "02",
-    "Bhrath",
-    "IMG005"
-  ],
-  "S3702": [
-    "true",
-    "03",
-    "STUDENT NAME 3"
-  ]
+  "max":0
 }
