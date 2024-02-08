@@ -10,6 +10,7 @@ function setimg(newImageUrl) {
 
 function switchimg(imgid){
 	cval+=imgid;
+	 if(cval<3) throw new Error(`IMG NOT FOUND! Status: ${response.status}`);
 	if(data[uid][3+cval]!=null)
 	setimg("photos/"+data[uid][3+cval]+".jpg");
 }
@@ -50,7 +51,7 @@ var button = document.getElementById("act");
 button.addEventListener("click", fetchdat);
 
 var nex = document.getElementById("next");
-nex.addEventListener("click", setimg(1));
+nex.addEventListener("click", switchimg(1));
 
 var nex = document.getElementById("prev");
-prev.addEventListener("click", setimg(-1));
+prev.addEventListener("click", switchimg(-1));
