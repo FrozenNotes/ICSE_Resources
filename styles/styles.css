@@ -534,6 +534,23 @@ a{
   font-family: Montserrat;
   font-size: 120%;
 }
+.swbtns
+{
+  width: 50px;
+  font-size: x-large;
+  color: white;
+  background: #191919;
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgb(15, 15, 15);
+  transition: ease-in 250ms;
+}
+.swbtns:hover{
+  background: rgb(17, 17, 17);
+  border-radius: 7px;
+}
+
 /*----------------------------*/
 #video {
   border: 0px solid black;
@@ -554,6 +571,9 @@ a{
 .camera {
   width: 340px;
   display: inline-block;
+  background: #ddd;
+  border-radius: 7px;
+  margin-bottom: 10px;
 }
 
 .output {
